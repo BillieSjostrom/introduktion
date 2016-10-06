@@ -2,7 +2,7 @@ import pytest
 from exercises.introduction import area, bouncer, character_frequency, is_of_age, overlapping, repeat, reverse, rovarsprak, to_seconds, travel_price, vowel
 
 
-@pytest.mark.skip('Not implemented yet.')
+
 def test_repeat():
     assert repeat("hej", 2) == "hejhej"
     assert repeat("då", -1) == ""
@@ -10,12 +10,12 @@ def test_repeat():
     assert repeat("ab cd ef ", 2) == "ab cd ef ab cd ef "
 
 
-@pytest.mark.skip('Not implemented yet.')
+
+
 def test_bouncer():
     assert bouncer([7, "ate", "", False, 9]) == [7, "ate", 9]
     assert bouncer(["a", "b", "c"]) == ["a", "b", "c"]
     assert bouncer([0, 0.0, 0j, {}, (), [], "hello"]) == ["hello"]
-
 
 @pytest.mark.skip('Not implemented yet.')
 def test_rovarsprak():
